@@ -5,10 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
+<%= render 'layouts/nav'%>
+<div class="container">
+     <span class="notice"><%= notice %></span>
+     <span class="alert"><%= alert %></span>
+ <%= yield %>
+</div>
 
-<%= yield %>
 
 </body>
 </html>
