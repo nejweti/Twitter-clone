@@ -5,15 +5,24 @@
           <div class="panel-body">
             Status
           </div>
+          </div>
+          <div class="panel panel-default">
+          <div class="panel-body">
+            trend
+          </div>
         </div>
+        
   
   </div>
   <div class="col-xs-6">
+    
+    <% @posts.each do |p|%>
       <div class="panel panel-default">
           <div class="panel-body">
-            feed
+            <%= p.content%>
           </div>
         </div>
+      <% end %>
     </div>
   <div class="col-xs-3">
       <div class="panel panel-default">
@@ -24,13 +33,4 @@
   </div>
 </div>
 
-<div class ="row">
-    <div class="col-xs-3">
-      <div class="panel panel-default">
-          <div class="panel-body">
-            trend
-          </div>
-        </div>
-  
-  </div>
-</div>
+
